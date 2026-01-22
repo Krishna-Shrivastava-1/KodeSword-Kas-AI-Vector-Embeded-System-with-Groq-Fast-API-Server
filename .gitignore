@@ -1,0 +1,43 @@
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# -----------------------
+# Virtual environments
+# -----------------------
+venv/
+.env
+.env.local
+.env.production
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.vscode/
+.idea/
+*.swp
+
+# -----------------------
+# OS files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------
+# Logs
+# -----------------------
+*.log
+
+# -----------------------
+# Model cache (IMPORTANT)
+# -----------------------
+.cache/
+sentence_transformers/
+huggingface/
