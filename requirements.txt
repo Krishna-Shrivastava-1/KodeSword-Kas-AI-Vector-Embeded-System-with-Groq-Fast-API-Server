@@ -5,3 +5,5 @@ python-dotenv
 sentence-transformers
 groq
 qdrant-client
+requests
+pika
