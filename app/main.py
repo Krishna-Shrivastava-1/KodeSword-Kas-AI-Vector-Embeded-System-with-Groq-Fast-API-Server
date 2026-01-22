@@ -98,7 +98,13 @@ ALLOWED_ORIGINS = [
 # -------------------------------------------------
 
 app = FastAPI(title="Kodesword RAG Blog API")
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,  # use ["*"] ONLY if needed
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 ASSISTANT_NAME = "Kas"
