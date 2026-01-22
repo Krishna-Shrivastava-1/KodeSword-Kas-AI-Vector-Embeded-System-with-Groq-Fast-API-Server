@@ -81,6 +81,17 @@ from app.llm.groq_llm import call_llm
 from app.schemas.query import SearchQuery
 from app.schemas.blog import BlogIndexRequest
 from app.producer import publish_blog_job
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+load_dotenv()
+# Allowed frontend origins
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",     # React local
+    "http://localhost:5173",     # Vite
+    "http://127.0.0.1:3000",
+    os.getenv("Base_Url")  # production frontend
+]
 
 # -------------------------------------------------
 # App Config
