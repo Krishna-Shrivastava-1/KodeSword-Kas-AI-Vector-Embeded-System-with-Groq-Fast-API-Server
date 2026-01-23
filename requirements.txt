@@ -7,3 +7,5 @@ groq
 qdrant-client
 requests
 pika
+torch
+langchain
